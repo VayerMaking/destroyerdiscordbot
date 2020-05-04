@@ -49,5 +49,6 @@ async def activate_purge():
 async def deactivate_purge():
     is_purge_active = False
     return is_purge_active
-
-bot.run(config.token)
+if __name__ == '__main__':
+    import config
+    bot.run(config.token)
