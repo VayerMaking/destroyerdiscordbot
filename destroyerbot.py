@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import time
+import config
 
 bot = commands.Bot(command_prefix='$')
 amount = 20
@@ -49,4 +50,4 @@ async def deactivate_purge():
     is_purge_active = False
     return is_purge_active
 
-bot.run('NzA2ODc3MTExODMwNTc3MTY1.XrAqAQ.nk-r9bD_SfjQmETQ0dF61lSjmKY')
+bot.run(config.token)
